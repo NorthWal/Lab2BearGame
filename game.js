@@ -6,9 +6,22 @@ function start(){
 	makeBees();
 	updateBees();
 	lastStingTime = new Date();
+
 }
 
+function restart(){
+	
+	bees =[];
+	
+	for (let i=1; i<bees.length;i++){
+		document.getElementById("bee"+i).remove();
+	}
 
+	
+	hits.innerHTML=0;
+	score=0;
+	start();
+}
 
 
 function Bear(){
